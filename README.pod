@@ -1,0 +1,43 @@
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+WWW::curlmyip - Returns your ip address using L<http://curlmyip.com>
+
+=head1 VERSION
+
+version 0.01
+
+=head1 SYNOPSIS
+
+    use WWW::curlmyip;
+
+    my $ip = get_ip(); # 54.123.84.6
+
+=head1 EXPORTS
+
+Exports the C<get_ip> function.
+
+=head1 FUNCTIONS
+
+=head2 get_ip
+
+Returns your ip address, using L<http://curlmyip.com>.
+
+    use WWW::curlmyip;
+    my $ip = get_ip();
+
+=head1 AUTHOR
+
+David Farrell <sillymoos@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2014 by David Farrell.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
