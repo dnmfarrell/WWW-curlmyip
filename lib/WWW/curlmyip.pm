@@ -39,8 +39,9 @@ Returns your ip address, using L<http://curlmyip.com>.
 
 sub get_ip {
     my $response = HTTP::Tiny->new->get('http://curlmyip.com');
-    die join(' ', 'error fetching ip',$response->{code}, $response->{reason})
-        unless $response->{success};
+    die join(' ', 'Error fetching ip: ',
+                  ($response->{status} or ''),
+                  ($response->{reason} or '')) unless $response->{success};
     my $ip = $response->{content};
     chomp $ip;
     $ip;
