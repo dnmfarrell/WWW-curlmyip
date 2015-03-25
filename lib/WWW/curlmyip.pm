@@ -38,7 +38,7 @@ Returns your ip address, using L<http://curlmyip.com>.
 =cut
 
 sub get_ip {
-    my $response = HTTP::Tiny->new->get('http://curlmyip.com');
+    my $response = HTTP::Tiny->new(timeout => 3)->get('http://curlmyip.com');
     die join(' ', 'Error fetching ip: ',
                   ($response->{status} or ''),
                   ($response->{reason} or '')) unless $response->{success};
