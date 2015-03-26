@@ -8,7 +8,7 @@ WWW::curlmyip - Returns your ip address using L<http://curlmyip.com>
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -31,11 +31,11 @@ Returns your ip address, using L<http://curlmyip.com>.
 
 =head1 AUTHOR
 
-David Farrell <sillymoos@cpan.org>
+David Farrell <dfarrell@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by David Farrell.
+This software is copyright (c) 2015 by David Farrell.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
